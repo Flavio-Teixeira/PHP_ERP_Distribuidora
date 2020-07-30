@@ -1,0 +1,12 @@
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Sun, 07 Dec 2008 20:41:31 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=UTF-8
+Content-Length: 763
+
+<?xml version="1.0" encoding="UTF-8"?><nfeConsultaNFResponse xmlns="http://www.portalfiscal.inf.br/nfe/wsdl/NfeConsulta"><nfeConsultaNFResult><retConsSitNFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="1.07"><infProt><tpAmb>2</tpAmb><verAplic>SP_NFE_PL_005b</verAplic><cStat>215</cStat><xMotivo>Rejeição: Falha no schema XML</xMotivo><cUF>35</cUF></infProt></retConsSitNFe></nfeConsultaNFResult></nfeConsultaNFResponse>

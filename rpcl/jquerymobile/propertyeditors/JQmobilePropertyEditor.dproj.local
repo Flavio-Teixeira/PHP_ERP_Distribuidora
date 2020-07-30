@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/02/24 15:51:27.000.916,C:\Users\desarrollador6\Documents\RAD Studio\Projects\JmobilePropertyEditor.dproj=C:\Users\desarrollador6\Documents\RAD Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2011/02/24 15:57:38.000.992,C:\qstudio\plugins\uJmobilePropertyEditor.pas=C:\Users\desarrollador6\Documents\RAD Studio\Projects\uJmobilePropertyEditor.pas</Transaction>
+    <Transaction>2011/02/24 15:57:42.000.898,C:\qstudio\plugins\JmobilePropertyEditor.dproj=C:\Users\desarrollador6\Documents\RAD Studio\Projects\JmobilePropertyEditor.dproj</Transaction>
+    <Transaction>2011/03/02 09:31:26.000.422,C:\qstudio\plugins\JmobilePropertyEditor.dproj=C:\qstudio\plugins\JQmobilePropertyEditor.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

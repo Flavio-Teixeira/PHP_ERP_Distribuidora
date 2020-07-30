@@ -1,0 +1,32 @@
+html,.ui-navbar,.ui-navbar ul,.ui-navbar li,.ui-navbar a,.ui-radio, .ui-radio label,.ui-checkbox, .ui-checkbox label{
+  height:100%;
+}
+
+.ui-btn-text{
+  white-space: normal;
+}
+
+.ui-checkbox, .ui-radio,.ui-controlgroup{
+  margin:0px;
+}
+.ui-slider-label{
+ top:50%;
+ margin-top:-1em;
+}
+.ui-content,.ui-input-clear,.ui-collapsible-heading-toggle .ui-btn{
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+
+.ui-listview li,.ui-collapsible-contain,label{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.ui-checkbox .ui-icon, .ui-radio .ui-icon {
+  top:50%;
+}

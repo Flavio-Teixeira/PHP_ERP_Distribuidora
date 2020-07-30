@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Autocomplete - a jQuery plugin</title>
+
+<style>
+	html * {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	h1 {
+		font-size: 20pt;
+	}
+
+	h2 {
+		font-size: 16pt;
+	}
+
+	h3 {
+		font-size: 14pt;
+	}
+
+	h4 {
+		font-size: 12pt;
+	}
+
+	p, div, blockquote {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+	}
+	
+	p,
+	dt,
+	dd {
+		padding-left: 20pt;
+		max-width: 60em;
+	}
+
+	code {
+		display: block;
+		padding-left: 40pt;
+		font-family: Consolas, Monaco, fixed;
+	}
+	
+	dt {
+		margin-top: 10pt;
+	}
+	
+	dt code {
+		display: inline;
+		padding: 0;
+	}
+
+	dt b {
+		padding-right: 40pt;
+	}
+
+	dd {
+		padding-left: 25pt;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Autocomplete - a jQuery plugin - screenshots</h1>
+	
+	<p>
+		This screen page some sample auto-complete fields from the <a href='http://localhost:8080/survey/start_input.htm?showSurvey=REVIEWS'>Glassdoor survey start page</a>.
+	</p>
+
+	<p>
+		<strong>See also:</strong> <a href='autocomplete-docs.html'>jQuery Autocomplete Docs</a>
+	</p>
+
+	<h2>Location auto-complete</h2>
+	<p style='text-align:center;'>
+		<img src='img/city-ac.png' />
+	</p>
+	<p>
+		In the above example, I'm using a fairly straightforward ajax auto-complete box with the following options set:
+	</p>
+	<pre>
+                    {
+                        delay: 100,
+                        minChars: 3,
+                        matchContains: true,
+                        matchSubset: false,
+                        cacheLength: 15,
+                        maxItemsToShow: 30,
+                        selectFirst: true,
+                        cellSeparator: '\x1f',
+                        formatItem: function(rowData, index, rowCount) {
+                                            // my format function
+                                        },
+                        resultsClass: "location_ac_results ac_results",
+                        resultsId: 'GDLocAC'
+                    };
+	</pre>
+	<p>
+		My format function simply gets the content of the edit field and then wraps any text matching this text with a 'strong' tag.
+		Also note that I'm giving the popup a unique ID.  This ID is only added to the popup when it's shown.  This was requested by
+		our QA director to help with UI testing.
+	</p>
+	<p>
+		I'm also adding my own classname to the results popup via the 'resultsClass' option.  This helps me to style the
+		popup contents.
+	</p>
+	<p>
+		The last thing to note is that I'm using a cell separator of 0x1f, which is the ASCII Unit Separator character.
+		This seemed the logical choice to separate data when I thought that the content could be any valid displayable character.
+		The default cell separator is the vertical bar character ('|').
+	</p>
+
+	<h2>Employer auto-complete</h2>
+	<p style='text-align:center;'>
+		<img src='img/employer-ac.png' />
+	</p>
+	<p>
+		This example is a little more complex, especially the fomatter, which uses additional data returned from the ajax query.  The options are as follows:
+	</p>
+	<pre>
+				{
+					delay: 100,
+					minChars: 2,
+					matchContains: true,
+					matchSubset: false,
+					cacheLength: 15,
+					maxItemsToShow: 10,
+					cellSeparator: '\x1f',
+					onItemSelect: function(listItem) {
+					                    myOnItemSelect(listItem);
+									},
+					formatItem: function(rowData, index, rowCount) {
+										// my formatting function
+									},
+					width: 500,
+					resultsClass: "employer_ac_results ac_results",
+					resultsId: 'GDEmployerAC',
+					extraParams: {
+									'partialWordMode': 'true',
+									'loadEmployers': 'false'
+								 }
+				}
+	</pre>
+	<p>
+		In addition to the more complex formatting function, I'm also specifying an 'onItemSelect' function.  This function gets the hidden employer ID
+		from the selected list item and sets it into hidden form fields.  It roughly looks like this:
+	</p>
+	<pre>
+				function myOnItemSelect = function(selectedListItem) {
+					selectedListItem = $(selectedListItem);
+				
+					var     moreData = selectedListItem.attr('extra');
+				
+					var     employerId = moreData[0];
+				}
+	</pre>
+	<p>
+		The last thing you may notice here is that I'm using the 'extraParams' option to pass a few parameters to the query.
+	</p>
+	<hr/>
+	<p>
+		Ron Lussier, <a href='http://www.glassdoor.com/index.htm'>Glassdoor.com</a> &ndash;
+		<a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20%63%6fyo&#116;%65%40&#103;l%61s%73d%6f%6fr&#046;&#099;%6f&#109;">&#099;&#111;&#121;&#111;&#116;&#101;&#064;&#103;&#108;&#097;&#115;&#115;&#100;&#111;&#111;&#114;&#046;&#099;&#111;&#109;</a><br/>
+		1 Oct 2009
+	</p>
+
+</body>
+</html>

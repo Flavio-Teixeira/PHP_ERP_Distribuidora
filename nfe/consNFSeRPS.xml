@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConsultarNfseRpsEnvio xmlns="http://www.ginfes.com.br/servico_consultar_nfse_rps_envio_v03.xsd" xmlns:tipos="http://www.ginfes.com.br/tipos_v03.xsd"><IdentificacaoRps><tipos:Numero>72</tipos:Numero><tipos:Serie>1</tipos:Serie><tipos:Tipo>1</tipos:Tipo></IdentificacaoRps><Prestador><tipos:Cnpj>67904201000194</tipos:Cnpj><tipos:InscricaoMunicipal>77317</tipos:InscricaoMunicipal></Prestador></ConsultarNfseRpsEnvio>

@@ -1,0 +1,49 @@
+O:4:"wsdl":48:{s:4:"wsdl";s:77:"http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl";s:7:"schemas";a:0:{}s:13:"currentSchema";N;s:7:"message";a:0:{}s:12:"complexTypes";a:0:{}s:8:"messages";a:0:{}s:14:"currentMessage";N;s:16:"currentOperation";N;s:9:"portTypes";a:0:{}s:15:"currentPortType";N;s:8:"bindings";a:0:{}s:14:"currentBinding";N;s:5:"ports";a:0:{}s:11:"currentPort";N;s:6:"opData";a:0:{}s:6:"status";s:0:"";s:13:"documentation";b:0;s:8:"endpoint";s:0:"";s:6:"import";a:0:{}s:6:"parser";N;s:8:"position";i:0;s:5:"depth";i:0;s:11:"depth_array";a:0:{}s:9:"proxyhost";s:0:"";s:9:"proxyport";s:0:"";s:13:"proxyusername";s:0:"";s:13:"proxypassword";s:0:"";s:7:"timeout";i:0;s:16:"response_timeout";i:30;s:12:"curl_options";a:0:{}s:8:"use_curl";b:0;s:8:"username";s:0:"";s:8:"password";s:0:"";s:8:"authtype";s:0:"";s:11:"certRequest";a:0:{}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.7.3";s:8:"revision";s:18:"$Revision: 1.114 $";s:9:"error_str";s:112:"HTTP ERROR: Unsupported HTTP response status 400 Bad Request (soapclient->response has contents of the response)";s:9:"debug_str";s:4486:"2008-11-14 15:30:27.514580 wsdl: ctor wsdl=http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl timeout=0 response_timeout=30
+2008-11-14 15:30:27.515062 wsdl: parse and process WSDL path=http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl
+2008-11-14 15:30:27.515440 wsdl: parse WSDL at path=http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl
+2008-11-14 15:30:27.515839 wsdl: getting WSDL http(s) URL http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl
+2008-11-14 15:30:27.516257 soap_transport_http: ctor url=http://webservices.amazon.com/AWSECommerceService/US/AWSECommerceService.wsdl use_curl= curl_options:
+array(0) {
+}
+2008-11-14 15:30:27.516683 soap_transport_http: parsed URL scheme = http
+2008-11-14 15:30:27.517062 soap_transport_http: parsed URL host = webservices.amazon.com
+2008-11-14 15:30:27.517438 soap_transport_http: parsed URL path = /AWSECommerceService/US/AWSECommerceService.wsdl
+2008-11-14 15:30:27.517835 soap_transport_http: set header Host: webservices.amazon.com
+2008-11-14 15:30:27.518245 soap_transport_http: set header User-Agent: NuSOAP/0.7.3 (1.114)
+2008-11-14 15:30:27.518682 soap_transport_http: set header Accept-Encoding: gzip, deflate
+2008-11-14 15:30:27.519060 soap_transport_http: set header Connection: close
+2008-11-14 15:30:27.519447 soap_transport_http: entered send() with data of length: 0
+2008-11-14 15:30:27.519851 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host webservices.amazon.com, port 80
+2008-11-14 15:30:27.520242 soap_transport_http: calling fsockopen with host webservices.amazon.com connection_timeout 0
+2008-11-14 15:30:27.680801 soap_transport_http: set response timeout to 30
+2008-11-14 15:30:27.681288 soap_transport_http: socket connected
+2008-11-14 15:30:27.681762 soap_transport_http: set header Content-Length: 0
+2008-11-14 15:30:27.682140 soap_transport_http: HTTP request: GET /AWSECommerceService/US/AWSECommerceService.wsdl HTTP/1.1
+2008-11-14 15:30:27.682516 soap_transport_http: HTTP header: Host: webservices.amazon.com
+2008-11-14 15:30:27.682894 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.7.3 (1.114)
+2008-11-14 15:30:27.683261 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2008-11-14 15:30:27.683638 soap_transport_http: HTTP header: Connection: close
+2008-11-14 15:30:27.684006 soap_transport_http: HTTP header: Content-Length: 0
+2008-11-14 15:30:27.684445 soap_transport_http: wrote data to socket, length = 199
+2008-11-14 15:30:27.709022 soap_transport_http: read line of 26 bytes: HTTP/1.0 400 Bad Request
+2008-11-14 15:30:27.709508 soap_transport_http: read line of 28 bytes: Server: squid/2.5.STABLE12
+2008-11-14 15:30:27.709888 soap_transport_http: read line of 19 bytes: Mime-Version: 1.0
+2008-11-14 15:30:27.710274 soap_transport_http: read line of 37 bytes: Date: Fri, 14 Nov 2008 17:27:49 GMT
+2008-11-14 15:30:27.710652 soap_transport_http: read line of 25 bytes: Content-Type: text/html
+2008-11-14 15:30:27.711037 soap_transport_http: read line of 22 bytes: Content-Length: 1222
+2008-11-14 15:30:27.711414 soap_transport_http: read line of 40 bytes: Expires: Fri, 14 Nov 2008 17:27:49 GMT
+2008-11-14 15:30:27.711791 soap_transport_http: read line of 34 bytes: X-Squid-Error: ERR_INVALID_URL 0
+2008-11-14 15:30:27.712210 soap_transport_http: read line of 33 bytes: X-Cache: MISS from datatexlinux
+2008-11-14 15:30:27.712588 soap_transport_http: read line of 45 bytes: X-Cache-Lookup: NONE from datatexlinux:3128
+2008-11-14 15:30:27.712977 soap_transport_http: read line of 25 bytes: Proxy-Connection: close
+2008-11-14 15:30:27.713354 soap_transport_http: read line of 2 bytes: 
+2008-11-14 15:30:27.713811 soap_transport_http: found end of headers after length 336
+2008-11-14 15:30:27.714292 soap_transport_http: want to read content of length 1222
+2008-11-14 15:30:27.714681 soap_transport_http: read buffer of 1222 bytes
+2008-11-14 15:30:27.715099 soap_transport_http: read to EOF
+2008-11-14 15:30:27.715472 soap_transport_http: read body of length 1222
+2008-11-14 15:30:27.715852 soap_transport_http: received a total of 1558 bytes of data from server
+2008-11-14 15:30:27.716520 soap_transport_http: closed socket
+2008-11-14 15:30:27.716959 soap_transport_http: end of send()
+2008-11-14 15:30:27.717357 wsdl: HTTP ERROR: Unsupported HTTP response status 400 Bad Request (soapclient->response has contents of the response)
+";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:4:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";}s:14:"usedNamespaces";a:0:{}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}

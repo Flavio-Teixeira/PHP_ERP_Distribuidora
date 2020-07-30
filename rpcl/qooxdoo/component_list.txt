@@ -1,0 +1,91 @@
++TToggleButton
+
+
+-------------
++Aplicación de efectos, tanto a widgets, como a elementos HTML
++Blocker, to perform modal operations
++Browser capabilities
++Cookie handling
++Clipping
++Native Window
++Añadir soporte datasources json 
++Webservices de acceso a flickr, etc
++Form validation
++Gears Interface
++Controladores, para linkar controles
++Filters usados en controles, para propiedades de filtrado
++Modelo de propiedades beginJS, y todo eso
++Twitter interface
++Events interface
++Añadir TODOS los eventos a qwidget
++Ver lo de las Constraints
++Ver lo de los Margins
++Ver lo de padding
++Alignment
++Revisar integración de esto con jquery para ver la compatibilidad
++Localization
++Conexión con datasource
++qpropertyeditor
++ActionLists
++Listview
++TreeView
++Label
++SlideBar
++slider
++spinner
+-------------
+qapplication - To control global properties, like theme and so on, and also, application type
+qtheme
+qricheditor
+qeffect
+qlog
+qatom
+qimage
+qbutton
+qcontainer
+qcolorpopup
+qcolorselector
+qdatechooser
+qnativescrollbar
+qscrollbar
+qscrollpane
+qscrollslider
+qactionlist (qcommand)
+qspacer
+qdecorator
+qflash
+qhtml
+qiframe
+qcheckbox
+qcombobox
+qdatefield
+qform
+qhoverbutton
+qlist
+qmenubutton
+qpasswordfield
+qradiobutton
+qradiobuttongroup
+qrepeatbutton
+qselectbox
+qslider
+qspinner
+qsplitbutton
+qtextarea
+qtextfield
+qtogglebutton
+qcheckgroupbox
+qgroupbox
+qradiogroupbox
+qlayout
+qmenu
+qmenubar
+qpopup
+qsplitter
+qtable
+qtabview
+qtoolbar
+qtooltip
+qtree
+qwindow
+qwindowmanager

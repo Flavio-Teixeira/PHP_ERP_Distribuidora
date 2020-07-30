@@ -1,0 +1,2 @@
+C:\"Program Files"\EasyPHP5.3.0\mysql\bin\mysqldump --user=root --password=liberar7777 --opt mgt_managertex > mgt_managertex.sql
+copy C:\sistemas\managertex\BD_Backup\mgt_managertex.sql \\DATATEXLINUX\download\BKP_BD_Phytotex\mgt_managertex.sql
